@@ -6,7 +6,7 @@
 
 #### 运行效果
 
-![项目展示](./doc/pic/项目展示1.jpg)
+![项目展示1](./doc/pic/项目展示1.jpg)
 
 ![项目展示2](./doc/pic/项目展示2.jpg)
 
@@ -31,7 +31,7 @@
 
 在线执行 Java 代码的实现流程如下图所示：
 
-![在线执行Java代码实现流程.jpg](E:/IdeaProject/OnlineExecutor-master/doc/pic/在线执行Java代码实现流程.jpg)
+![在线执行Java代码实现流程.jpg](./doc/pic/在线执行Java代码实现流程.jpg)
 
 既然要运行客户端发来的 Java 代码，那么我们首先需要了解 Java 程序编译和运行的过程，然后仿照 Java 程序的真实运行过程来运行客户端发来的 Java 代码。
 
@@ -41,7 +41,7 @@
 
 我们先来看一下 Java 程序编译和运行的过程图：
 
-![Java程序编译和运行的过程.jpg](E:/IdeaProject/OnlineExecutor-master/doc/pic/Java程序编译和运行的过程.jpg)
+![Java程序编译和运行的过程.jpg](./doc/pic/Java程序编译和运行的过程.jpg)
 
 如上图所示，要运行一个 Java 程序需要经过以下两个步骤：
 
@@ -114,7 +114,7 @@ Java 类运行的过程可分为两个过程：
 
 在了解 Java 程序的实际运行过程之后，我们接下来要考虑的是：如何在运行过程中实现这一流程？也就是说，我们要在服务器端程序运行的过程中完成客户端代码发来的代码的编译和运行。通过对上图中 Java 程序编译和运行流程进行分析，我们得到以下客户端 Java 源代码执行流程：
 
-![客户端程序编译和运行的过程.jpg](E:/IdeaProject/OnlineExecutor-master/doc/pic/客户端程序编译和运行的过程.jpg)
+![客户端程序编译和运行的过程.jpg](./doc/pic/客户端程序编译和运行的过程.jpg)
 
 通过观察上图可以发现，我们的重点在于实现 `StringSourceCompiler` 和 `JavaClassExecuter` 两个类。它们的作用分别为：
 
